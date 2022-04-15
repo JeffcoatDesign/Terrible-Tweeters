@@ -18,6 +18,7 @@ public class VolumeControl : MonoBehaviour
     {
         _slider.onValueChanged.AddListener(HandleSliderValueChanged);
         _toggle.onValueChanged.AddListener(HandleToggleValueChanged);
+        _slider.value = PlayerPrefs.GetFloat(_volumeParameter);
     }
 
     private void HandleToggleValueChanged(bool enableSound)
@@ -52,7 +53,7 @@ public class VolumeControl : MonoBehaviour
 
     void Start()
     {
-        _slider.value = PlayerPrefs.GetFloat(_volumeParameter, _slider.value);
+        _slider.value = PlayerPrefs.GetFloat(_volumeParameter);
     }
 
     // Update is called once per frame
