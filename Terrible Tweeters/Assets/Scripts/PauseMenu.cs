@@ -46,6 +46,7 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartLevel()
     {
+        PlayerPrefs.Save();
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
         Resume();

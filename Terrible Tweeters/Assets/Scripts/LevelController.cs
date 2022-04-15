@@ -24,6 +24,7 @@ public class LevelController : MonoBehaviour
 
     void GoToNextLevel()
     {
+        PlayerPrefs.Save();
         Debug.Log("Go to level " + _nextLevelName);
         SceneManager.LoadScene(_nextLevelName);
     }

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class VolumeControl : MonoBehaviour
 {
-    [SerializeField] string _volumeParameter = "MasterVolume";
+    [SerializeField] string _volumeParameter;
     [SerializeField] AudioMixer _mixer;
     [SerializeField] Slider _slider;
     [SerializeField] Toggle _toggle;
