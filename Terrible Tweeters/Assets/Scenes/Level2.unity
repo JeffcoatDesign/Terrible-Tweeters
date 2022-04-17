@@ -558,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3281201606981073152, guid: fbedf25f782edab4db95b4ce02cab417, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 5.2734375
       objectReference: {fileID: 0}
     - target: {fileID: 3281201606981073407, guid: fbedf25f782edab4db95b4ce02cab417, type: 3}
       propertyPath: m_LocalPosition.x
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1320,7 +1320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108529041590098609, guid: d91e53d0351a4bf45ac4e34fd49fc392, type: 3}
       propertyPath: _nextLevelName
-      value: Level1
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 2108529041590098614, guid: d91e53d0351a4bf45ac4e34fd49fc392, type: 3}
       propertyPath: m_RootOrder
@@ -1878,6 +1878,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 819718475}
     m_Modifications:
+    - target: {fileID: 5402675268680377328, guid: 2aa6d8160bf863a409d28564421c497d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 819718471}
+    - target: {fileID: 5402675268680377328, guid: 2aa6d8160bf863a409d28564421c497d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 7594038517668183512, guid: 2aa6d8160bf863a409d28564421c497d, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

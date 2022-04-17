@@ -18,7 +18,10 @@ public class VolumeControl : MonoBehaviour
     {
         _slider.onValueChanged.AddListener(HandleSliderValueChanged);
         _toggle.onValueChanged.AddListener(HandleToggleValueChanged);
-        _slider.value = PlayerPrefs.GetFloat(_volumeParameter);
+        if (PlayerPrefs.HasKey(_volumeParameter))
+        {
+            _slider.value = PlayerPrefs.GetFloat(_volumeParameter);
+        }
     }
 
     private void HandleToggleValueChanged(bool enableSound)
@@ -60,5 +63,10 @@ public class VolumeControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.Save();
     }
 }

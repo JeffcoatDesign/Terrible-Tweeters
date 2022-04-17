@@ -52,6 +52,12 @@ public class PauseMenu : MonoBehaviour
         Resume();
     }
 
+    public void MainMenu()
+    {
+        PlayerPrefs.Save();
+        SceneManager.LoadScene(0);
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quiting Game...");
